@@ -8,5 +8,16 @@
 [node name="Room" type="Node2D" parent="."]
 script = ExtResource("2_0xm2m")
 
-[node name="Player" parent="." instance=ExtResource("1_ig7tw")]
-position = Vector2(576, 600)
+[node name="Player1" parent="." instance=ExtResource("1_ig7tw")]
+position = Vector2(300, 600)
+player_id = 1
+weapon = "sword"
+color = Color(0.55, 0.8, 1, 1)
+start_facing = 1
+
+[node name="Player2" parent="." instance=ExtResource("1_ig7tw")]
+position = Vector2(852, 600)
+player_id = 2
+weapon = "axe"
+color = Color(1, 0.6, 0.45, 1)
+start_facing = -1
