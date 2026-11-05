@@ -3,10 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://dm5q7o56bqqk5" path="res://player.tscn" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://jb7ktlhb6etx" path="res://room.gd" id="2_0xm2m"]
 
-[node name="Node2D" type="Node2D" unique_id=1774456066]
+[node name="Main" type="Node2D"]
 
-[node name="CharacterBody2D" parent="." unique_id=1106907856 instance=ExtResource("1_ig7tw")]
-position = Vector2(567, 430)
-
-[node name="Room" type="Node2D" parent="." unique_id=1228187384]
+[node name="Room" type="Node2D" parent="."]
 script = ExtResource("2_0xm2m")
+
+[node name="Player" parent="." instance=ExtResource("1_ig7tw")]
+position = Vector2(576, 600)

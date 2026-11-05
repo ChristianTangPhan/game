@@ -3,13 +3,14 @@
 [ext_resource type="Script" uid="uid://coyb2hg8nbbbu" path="res://player.gd" id="1_4flbx"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sh265"]
-radius = 16.0
-height = 52.0
+radius = 12.0
+height = 70.0
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1106907856]
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 3
 script = ExtResource("1_4flbx")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1266552895]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=656168763]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -9)
 shape = SubResource("CapsuleShape2D_sh265")
